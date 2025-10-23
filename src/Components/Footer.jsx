@@ -69,44 +69,94 @@
 // export default Footer;
 
 
-// Footer.jsx
+// // Footer.jsx
+// import React from 'react';
+
+// const Footer = () => {
+//   return (
+//     <footer className="bg-gray-800 text-white py-8 mt-10">
+//       <div className="max-w-screen-xl mx-auto px-6">
+//         {/* Footer top */}
+//         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+//           <div className="text-center md:text-left">
+//             <h2 className="text-3xl font-semibold tracking-wider">Toy Shop</h2>
+//             <p className="text-lg mt-2 opacity-70">Creating Memories, One Toy at a Time</p>
+//           </div>
+//           <div className="flex justify-center mt-6 md:mt-0 space-x-6 text-sm">
+//             <a href="/about" className="hover:text-teal-300 transition-colors">About Us</a>
+//             <a href="/shop" className="hover:text-teal-300 transition-colors">Shop</a>
+//             <a href="/contact" className="hover:text-teal-300 transition-colors">Contact</a>
+//             <a href="/privacy" className="hover:text-teal-300 transition-colors">Privacy Policy</a>
+//           </div>
+//         </div>
+
+//         {/* Footer bottom */}
+//         <div className="border-t border-gray-700 pt-6 text-center">
+//           <p className="text-sm opacity-70">&copy; {new Date().getFullYear()} Toy Shop. All Rights Reserved.</p>
+//           <div className="mt-4 text-sm">
+//             <p>Follow us:</p>
+//             <div className="flex justify-center space-x-4 mt-2">
+//               <a href="https://facebook.com" className="hover:text-teal-300 transition-colors" aria-label="Facebook">
+//                 <i className="fab fa-facebook"></i>
+//               </a>
+//               <a href="https://twitter.com" className="hover:text-teal-300 transition-colors" aria-label="Twitter">
+//                 <i className="fab fa-twitter"></i>
+//               </a>
+//               <a href="https://instagram.com" className="hover:text-teal-300 transition-colors" aria-label="Instagram">
+//                 <i className="fab fa-instagram"></i>
+//               </a>
+//               <a href="https://youtube.com" className="hover:text-teal-300 transition-colors" aria-label="YouTube">
+//                 <i className="fab fa-youtube"></i>
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default Footer;
+
+
 import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8 mt-10">
+    <footer className="bg-gray-900 text-white py-12 mt-10">
       <div className="max-w-screen-xl mx-auto px-6">
-        {/* Footer top */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+        {/* Footer Top */}
+        <div className="flex flex-col md:flex-row justify-between items-center mb-10">
           <div className="text-center md:text-left">
-            <h2 className="text-3xl font-semibold tracking-wider">Toy Shop</h2>
-            <p className="text-lg mt-2 opacity-70">Creating Memories, One Toy at a Time</p>
+            <h2 className="text-4xl font-semibold tracking-wider text-teal-400">Toy Shop</h2>
+            <p className="text-lg mt-2 opacity-80">Creating Memories, One Toy at a Time</p>
           </div>
-          <div className="flex justify-center mt-6 md:mt-0 space-x-6 text-sm">
+          <div className="flex justify-center md:justify-start mt-6 md:mt-0 space-x-8 text-sm">
             <a href="/about" className="hover:text-teal-300 transition-colors">About Us</a>
             <a href="/shop" className="hover:text-teal-300 transition-colors">Shop</a>
             <a href="/contact" className="hover:text-teal-300 transition-colors">Contact</a>
+            <a href="/terms" className="hover:text-teal-300 transition-colors">Terms & Conditions</a>
             <a href="/privacy" className="hover:text-teal-300 transition-colors">Privacy Policy</a>
           </div>
         </div>
 
-        {/* Footer bottom */}
-        <div className="border-t border-gray-700 pt-6 text-center">
+        {/* Footer Bottom */}
+        <div className="border-t border-gray-700 pt-8 text-center">
           <p className="text-sm opacity-70">&copy; {new Date().getFullYear()} Toy Shop. All Rights Reserved.</p>
           <div className="mt-4 text-sm">
-            <p>Follow us:</p>
-            <div className="flex justify-center space-x-4 mt-2">
+            <p className="text-teal-300">Follow us:</p>
+            <div className="flex justify-center space-x-6 mt-3">
               <a href="https://facebook.com" className="hover:text-teal-300 transition-colors" aria-label="Facebook">
-                <i className="fab fa-facebook"></i>
+                <i className="fab fa-facebook fa-2x"></i>
               </a>
               <a href="https://twitter.com" className="hover:text-teal-300 transition-colors" aria-label="Twitter">
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-twitter fa-2x"></i>
               </a>
               <a href="https://instagram.com" className="hover:text-teal-300 transition-colors" aria-label="Instagram">
-                <i className="fab fa-instagram"></i>
+                <i className="fab fa-instagram fa-2x"></i>
               </a>
               <a href="https://youtube.com" className="hover:text-teal-300 transition-colors" aria-label="YouTube">
-                <i className="fab fa-youtube"></i>
+                <i className="fab fa-youtube fa-2x"></i>
               </a>
             </div>
           </div>
