@@ -234,9 +234,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css"; // Import Swiper CSS
-import firsttoy from '../assets/toy1.avif';
-import secondtoy2 from '../assets/toy2.avif';
-import thirdtoy3 from '../assets/toy3.avif';
+import firsttoy from '../assets/f1.avif';
+import secondtoy2 from '../assets/f2.avif';
+import thirdtoy3 from '../assets/features3.avif';
 
 // Data for the toys
 const toys = [
