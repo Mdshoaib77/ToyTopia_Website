@@ -1,68 +1,68 @@
-// // // // // // // // // import React from 'react'
-// // // // // // // // // import logo from '../assets/toytopia-logo.png'
+// // import React from 'react'
+// // import logo from '../assets/toytopia-logo.png'
 
-// // // // // // // // // const Navbar = () => {
-// // // // // // // // //   return (
-// // // // // // // // //    <div className="navbar bg-base-100 shadow-sm">
-// // // // // // // // //   <div className="flex-1">
-// // // // // // // // //     <a className="btn btn-ghost text-xl">daisyUI</a>
-// // // // // // // // //   </div>
-// // // // // // // // //   <div className="flex gap-2">
-// // // // // // // // //     <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
-// // // // // // // // //     <div className="dropdown dropdown-end">
-// // // // // // // // //       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-// // // // // // // // //         <div className="w-10 rounded-full">
-// // // // // // // // //           <img
-// // // // // // // // //             alt="Tailwind CSS Navbar component"
-// // // // // // // // //             src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-// // // // // // // // //         </div>
-// // // // // // // // //       </div>
-// // // // // // // // //       <ul
-// // // // // // // // //         tabIndex="-1"
-// // // // // // // // //         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-// // // // // // // // //         <li>
-// // // // // // // // //           <a className="justify-between">
-// // // // // // // // //             Profile
-// // // // // // // // //             <span className="badge">New</span>
-// // // // // // // // //           </a>
-// // // // // // // // //         </li>
-// // // // // // // // //         <li><a>Settings</a></li>
-// // // // // // // // //         <li><a>Logout</a></li>
-// // // // // // // // //       </ul>
-// // // // // // // // //     </div>
-// // // // // // // // //   </div>
-// // // // // // // // // </div>
-// // // // // // // // //   )
-// // // // // // // // // }
+// // const Navbar = () => {
+// //   return (
+// //    <div className="navbar bg-base-100 shadow-sm">
+// //   <div className="flex-1">
+// //     <a className="btn btn-ghost text-xl">daisyUI</a>
+// //   </div>
+// //   <div className="flex gap-2">
+// //     <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+// //     <div className="dropdown dropdown-end">
+// //       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+// //         <div className="w-10 rounded-full">
+// //           <img
+// //             alt="Tailwind CSS Navbar component"
+// //             src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+// //         </div>
+// //       </div>
+// //       <ul
+// //         tabIndex="-1"
+// //         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+// //         <li>
+// //           <a className="justify-between">
+// //             Profile
+// //             <span className="badge">New</span>
+// //           </a>
+// //         </li>
+// //         <li><a>Settings</a></li>
+// //         <li><a>Logout</a></li>
+// //       </ul>
+// //     </div>
+// //   </div>
+// // </div>
+// //   )
+// // }
 
-// // // // // // // // // export default Navbar
+// // export default Navbar
 
 
-// // // // // // // // import React from 'react'; // Assuming the logo image is in this path
+// import React from 'react'; // Assuming the logo image is in this path
 
-// // // // // // // // const Navbar = () => {
-// // // // // // // //   return (
-// // // // // // // //     <div className="navbar bg-base-100 shadow-sm">
-// // // // // // // //       {/* Left Side - Logo */}
-// // // // // // // //       <div className="flex-1">
-// // // // // // // //         <img src={logo} alt="Toytopia Logo" className="h-10" />
-// // // // // // // //       </div>
+// const Navbar = () => {
+//   return (
+//     <div className="navbar bg-base-100 shadow-sm">
+//       {/* Left Side - Logo */}
+//       <div className="flex-1">
+//         <img src={logo} alt="Toytopia Logo" className="h-10" />
+//       </div>
       
-// // // // // // // //       {/* Center - Home and My Profile */}
-// // // // // // // //       <div className="flex justify-center gap-10">
-// // // // // // // //         <a href="/" className="btn btn-ghost text-xl">Home</a>
-// // // // // // // //         <a href="/profile" className="btn btn-ghost text-xl">My Profile</a>
-// // // // // // // //       </div>
+//       {/* Center - Home and My Profile */}
+//       <div className="flex justify-center gap-10">
+//         <a href="/" className="btn btn-ghost text-xl">Home</a>
+//         <a href="/profile" className="btn btn-ghost text-xl">My Profile</a>
+//       </div>
       
-// // // // // // // //       {/* Right Side - Login Button */}
-// // // // // // // //       <div className="flex gap-2">
-// // // // // // // //         <button className="btn btn-primary">Login</button>
-// // // // // // // //       </div>
-// // // // // // // //     </div>
-// // // // // // // //   );
-// // // // // // // // }
+//       {/* Right Side - Login Button */}
+//       <div className="flex gap-2">
+//         <button className="btn btn-primary">Login</button>
+//       </div>
+//     </div>
+//   );
+// }
 
-// // // // // // // // export default Navbar;
+// export default Navbar;
 
 
 // // // // // // // import React from 'react';
@@ -1179,164 +1179,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-// import React, { useState, useEffect } from 'react';
-// import { FaBars } from 'react-icons/fa';
-// import { Link } from 'react-router-dom';
-// import { auth } from '../Firebase/firebase-config'; // Import Firebase auth
-// import { onAuthStateChanged, signOut } from 'firebase/auth'; // For authentication
-
-// import image from '../assets/hero1.jpg';
-// import logo from '../assets/ToyTopia_logo.png';
-
-// const Navbar = () => {
-//   const [user, setUser] = useState(null);
-//   const [isOpen, setIsOpen] = useState(false);
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-//       setUser(currentUser);
-//       setLoading(false);
-//     });
-
-//     return () => unsubscribe(); // Clean up the subscription
-//   }, []);
-
-//   const toggleDropdown = () => {
-//     setIsOpen(!isOpen);
-//   };
-
-//   const handleLogout = () => {
-//     signOut(auth).then(() => {
-//       setUser(null);
-//     });
-//   };
-
-//   return (
-//     <div className="relative">
-//       <div
-//         className="w-full h-screen bg-cover bg-center"
-//         style={{ backgroundImage: `url(${image})` }}
-//       >
-//         <div className="absolute inset-0 bg-black opacity-50"></div>
-//         <div className="absolute inset-0 flex justify-center items-center text-center text-white">
-//           <div className="space-y-6 px-4 md:px-16">
-//             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-shadow-lg">
-//               Welcome to ToyTopia!
-//             </h1>
-//             <p className="text-lg sm:text-xl md:text-2xl font-medium opacity-80">
-//               Explore the world of toys with a never-before-seen experience.
-//             </p>
-//             <div>
-//               <button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out">
-//                 Start Exploring
-//               </button>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Navbar */}
-//       <div className="absolute top-0 left-0 w-full shadow-xl p-4 z-50">
-//         <div className="relative flex justify-between items-center w-full">
-//           <div className="flex items-center ml-8">
-//             <img src={logo} alt="ToyTopia Logo" className="w-32" />
-//           </div>
-
-//           <div className="hidden md:flex justify-center gap-12">
-//             <Link
-//               to="/"
-//               className="text-xl font-medium text-white hover:text-blue-600 transition duration-300 ease-in-out py-2 px-4"
-//             >
-//               Home
-//             </Link>
-//             <Link
-//               to="/profile"
-//               className="text-xl font-medium text-white hover:text-blue-600 transition duration-300 ease-in-out py-2 px-4"
-//             >
-//               My Profile
-//             </Link>
-//           </div>
-
-//           {/* Mobile Dropdown Menu */}
-//           <div className="md:hidden flex items-center justify-between space-x-4">
-//             <button
-//               onClick={toggleDropdown}
-//               className="text-white hover:text-blue-600 text-3xl"
-//             >
-//               <FaBars />
-//             </button>
-//             {isOpen && (
-//               <div className="absolute top-16 right-8 bg-white shadow-lg rounded-lg w-40 p-4 flex flex-col items-center z-10 transition-all ease-in-out duration-300">
-//                 <Link
-//                   to="/"
-//                   className="text-xl font-medium text-gray-700 hover:text-blue-600 py-2 px-4"
-//                 >
-//                   Home
-//                 </Link>
-//                 <Link
-//                   to="/profile"
-//                   className="text-xl font-medium text-gray-700 hover:text-blue-600 py-2 px-4"
-//                 >
-//                   My Profile
-//                 </Link>
-//                 <div className="mt-4">
-//                   {!user ? (
-//                     <Link to="/login">
-//                       <button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 hover:from-teal-600 hover:to-blue-700 transition-all duration-300 ease-in-out">
-//                         Login
-//                       </button>
-//                     </Link>
-//                   ) : (
-//                     <button
-//                       onClick={handleLogout}
-//                       className="bg-gradient-to-r from-teal-500 to-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 hover:from-teal-600 hover:to-blue-700 transition-all duration-300 ease-in-out"
-//                     >
-//                       Logout
-//                     </button>
-//                   )}
-//                 </div>
-//               </div>
-//             )}
-//           </div>
-
-//           {/* Desktop Menu */}
-//           <div className="hidden md:flex gap-4 mr-8">
-//             {!user ? (
-//               <Link to="/login">
-//                 <button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 hover:from-teal-600 hover:to-blue-700 transition-all duration-300 ease-in-out">
-//                   Login
-//                 </button>
-//               </Link>
-//             ) : (
-//               <>
-//                 {/* Profile Image and Name (Visible on Hover) */}
-//                 <div className="relative">
-//                   <img
-//                     src={user.photoURL || 'https://via.placeholder.com/150'}
-//                     alt="User"
-//                     className="w-12 h-12 rounded-full cursor-pointer"
-//                   />
-//                   {/* Hover effect for desktop */}
-//                   <div className="absolute top-14 left-0 text-white bg-black bg-opacity-70 p-2 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover:opacity-100">
-//                     {user.displayName}
-//                   </div>
-//                 </div>
-//                 <button
-//                   onClick={handleLogout}
-//                   className="bg-gradient-to-r from-teal-500 to-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 hover:from-teal-600 hover:to-blue-700 transition-all duration-300 ease-in-out"
-//                 >
-//                   Logout
-//                 </button>
-//               </>
-//             )}
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
