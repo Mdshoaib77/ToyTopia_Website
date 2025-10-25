@@ -1,16 +1,67 @@
-# React + Vite
+# ToyTopia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ToyTopia is a vibrant and playful online marketplace for kids' toys, encouraging families to discover and support local toy sellers. The website allows users to browse toys, view detailed information, leave feedback, and rate toys they want to buy for their kids. It provides an interactive shopping experience with user authentication, dynamic content, and responsive design.
 
-Currently, two official plugins are available:
+## Live URL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the live version of the website here: [ToyTopia Live](https://toytopia-toyswebsite.netlify.app/)
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **User Authentication**: Secure login and registration system with Firebase authentication. Users can log in using email/password or Google authentication.
+- **Responsive Design**: Fully responsive on mobile, tablet, and desktop.
+- **Toy Marketplace**: Users can browse through a variety of toys, view details, and add ratings and feedback.
+- **Toy Details Page**: Each toy has a detailed page with all information about the product, along with a form to "Try Now" the toy.
+- **Protected Routes**: Certain pages are protected, such as the Toy Details page, requiring users to be logged in to access them.
+- **Firebase Integration**: Secure user authentication and profile management through Firebase.
+- **Interactive Animations**: Framer Motion for smooth transitions and animations, and Swiper for a dynamic toy slider.
+- **404 Page**: Custom "Not Found" page when a route is incorrect.
+- **Social Media Links**: Footer contains links to terms, privacy policy, and social media accounts.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React.js, Tailwind CSS, Framer Motion, Swiper
+- **Backend**: Firebase Authentication
+- **Deployment**: Netlify for hosting
+- **State Management**: React Context API
+- **Package Manager**: npm
+
+## NPM Packages Used
+
+- **firebase**: For authentication and storing user data.
+- **react-router-dom**: For routing between different pages.
+- **framer-motion**: For animations and smooth page transitions.
+- **swiper**: For the image slider on the homepage.
+- **react-toastify**: For displaying toast notifications for success and error messages.
+- **react-icons**: For adding icons to the UI.
+- **react-bootstrap**: For some responsive elements (if used).
+- **dotenv**: For managing environment variables, such as Firebase API keys.
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/yourusername/ToyTopia.git
+Install dependencies:
+
+bash
+Copy code
+npm install
+Create a .env file in the root of the project and add your Firebase configuration:
+
+bash
+Copy code
+REACT_APP_FIREBASE_API_KEY=your-api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+REACT_APP_FIREBASE_APP_ID=your-app-id
+Run the development server:
+
+bash
+Copy code
+npm run dev
