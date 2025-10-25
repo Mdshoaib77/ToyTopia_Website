@@ -21,13 +21,10 @@ const router = createBrowserRouter([
       { path: '/profile', Component: Profile },
       { path: '/register', Component: Register },
       { path: '/forgot-password', Component: ForgotPassword },
-      {
-        path: '/toy/:toyId',
-        Component: ToyDetails,
-      },
-      { path: '/notfound', Component: NotFound },
+      { path: '/toy/:toyId', Component: ToyDetails },
     ],
   },
+  { path: '*', Component: NotFound },
 ]);
 
 createRoot(document.getElementById('root')).render(
