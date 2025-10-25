@@ -46,14 +46,11 @@ To run the project locally, follow these steps:
    ```bash
    git clone https://github.com/yourusername/ToyTopia.git
 2.Install dependencies:
+
+
 npm install
 
 3.Run the development server:
-npm run dev
-Create a .env file in the root of the project and add your Firebase configuration:
 
-Run the development server:
 
-bash
-Copy code
 npm run dev
