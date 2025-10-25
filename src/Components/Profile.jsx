@@ -1,7 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
 import { auth } from '../Firebase/firebase-config'; // Firebase authentication setup
 import { updateProfile } from 'firebase/auth'; // Firebase method to update profile info
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
+import { ToastContainer, toast } from 'react-toastify'; // Import Toastify
+import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
 
 const Profile = () => {
   const [name, setName] = useState('');
@@ -26,9 +29,9 @@ const Profile = () => {
         displayName: name,
         photoURL: photoURL,
       });
-      alert('Profile updated successfully');
+      toast.success('Profile updated successfully!'); // Success toast
     } catch (error) {
-      alert('Error updating profile: ' + error.message);
+      toast.error('Error updating profile: ' + error.message); // Error toast
     } finally {
       setLoading(false);
     }
@@ -128,6 +131,9 @@ const Profile = () => {
           </div>
         )}
       </motion.div>
+
+      {/* ToastContainer to display toast notifications */}
+      <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
     </div>
   );
 };
